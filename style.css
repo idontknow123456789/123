@@ -35,6 +35,32 @@ header {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.photo-gallery {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 每行四個 */
+    gap: 15px;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%; /* 保證圖片寬度為格子的100% */
+    height: auto; /* 高度自動調整，保持橫向比例 */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
 
 table {
     width: 100%;
