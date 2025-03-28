@@ -51,12 +51,14 @@ header {
 }
 
 .photo-item img {
-    width: 200px; /* 設定固定寬度 */
-    height: 200px; /* 設定固定高度 */
-    object-fit: cover; /* 保持圖片比例並填滿方框 */
+    width: 100%; /* 設定為百分比寬度 */
+    max-width: 200px; /* 設定最大寬度 */
+    height: auto; /* 自動調整高度以保持比例 */
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .photo-item p {
     margin-top: 10px;
