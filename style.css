@@ -41,24 +41,24 @@ header {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap; /* 讓圖片能自動換行 */
     gap: 15px;
 }
 
 .photo-item {
     text-align: center;
+    width: 100%; /* 設定每個圖片項目的寬度為 100% */
+    max-width: 200px; /* 限制最大寬度為 200px */
 }
 
 .photo-item img {
-    width: 100%; /* 設定為百分比寬度 */
-    max-width: 200px; /* 設定最大寬度 */
-    height: auto; /* 自動調整高度以保持比例 */
-    object-fit: cover;
+    width: 100%; /* 圖片寬度跟隨父容器 */
+    height: 200px; /* 固定高度 */
+    object-fit: cover; /* 保持圖片比例並填滿方框 */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .photo-item p {
     margin-top: 10px;
