@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background:url('封面.jpg')center bottom/cover no-repeat; ;
+    color: white;
+    text-align: center;
+    padding: 8em 1.5em; /* 增加 padding 讓 header 有足夠高度 */
+    font-size: 32px;
+    font-weight: bold;
+    height: 400px; /* 設定固定高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip-info {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #ff6f61;
+    color: white;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+        font-size: 24px;
+        padding: 4em 1em;
+    }
+}
