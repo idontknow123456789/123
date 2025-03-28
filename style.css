@@ -8,13 +8,13 @@ body {
 }
 
 header {
-    background:url('封面.jpg')center bottom/cover no-repeat; ;
+    background: url('封面.jpg') center bottom/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 8em 1.5em; /* 增加 padding 讓 header 有足夠高度 */
+    padding: 8em 1.5em;
     font-size: 32px;
     font-weight: bold;
-    height: 400px; /* 設定固定高度 */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,13 +35,14 @@ header {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .photo-gallery {
     margin-top: 20px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 每行四個 */
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
@@ -50,8 +51,9 @@ header {
 }
 
 .photo-item img {
-    width: 100%; /* 保證圖片寬度為格子的100% */
-    height: auto; /* 高度自動調整，保持橫向比例 */
+    width: 200px; /* 設定固定寬度 */
+    height: 200px; /* 設定固定高度 */
+    object-fit: cover; /* 保持圖片比例並填滿方框 */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
